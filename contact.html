@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - METRICX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="brand-name">METRICX</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Conversions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                             <li><a class="dropdown-item" href="length.html">• Length</a></li>
+                            <li><a class="dropdown-item" href="area.html">• Area</a></li>
+                            <li><a class="dropdown-item" href="mass.html">• Mass</a></li>
+                            <li><a class="dropdown-item" href="temperature.html">• Temperature</a></li>
+                            <li><a class="dropdown-item" href="currency.html">• Currency</a></li>
+                            <li><a class="dropdown-item" href="volume.html">• Volume</a></li>
+                            <li><a class="dropdown-item" href="speed.html">• Speed</a></li>
+                            <li><a class="dropdown-item" href="energy.html">• Energy</a></li>
+                            <li><a class="dropdown-item" href="time.html">• Time</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="articles.html">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title" data-aos="fade-up">Contact Us</h1>
+                    <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Get in touch with our team</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5" data-aos="fade-right">
+                    <div class="contact-form-wrapper">
+                        <h2 class="section-title mb-4">Send us a Message</h2>
+                        <div id="contactSuccessMessage" class="alert alert-success text-center mt-3" role="alert"
+                            style="display: none;">
+                            Thank you for contacting us! Your message has been sent successfully. We will get back to
+                            you within 24 hours.
+                        </div>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="">Choose a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="support">Technical Support</option>
+                                    <option value="feature">Feature Request</option>
+                                    <option value="bug">Bug Report</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea class="form-control" id="message" rows="6" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-4" data-aos="fade-left">
+                    <div class="contact-info">
+                        <h3 class="section-title mb-4">Get in Touch</h3>
+
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Email</h5>
+                                <p>hello@metricx.com<br>support@metricx.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Phone</h5>
+                                <p>+1 (555) 123-4567<br>Mon-Fri 9AM-6PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item mb-4">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Address</h5>
+                                <p>123 Innovation Drive<br>Tech Valley, CA 94025<br>United States</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h5>Response Time</h5>
+                                <p>We typically respond within 24 hours during business days.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">METRICX</h5>
+                    <p class="footer-text">Your ultimate tool for seamless metric conversions. Convert with precision
+                        and confidence across all measurement units.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">Conversions</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Length</a></li>
+                        <li><a href="#">Area</a></li>
+                        <li><a href="#">Mass</a></li>
+                        <li><a href="#">Temperature</a></li>
+                        <li><a href="#">Currency</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">More Tools</h6>
+                    <ul class="footer-links">
+                        <li><a href="#">Volume</a></li>
+                        <li><a href="#">Speed</a></li>
+                        <li><a href="#">Energy</a></li>
+                        <li><a href="#">Time</a></li>
+                        <li><a href="#">Pressure</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">API Docs</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small class="footer-copyright">Copyright &copy; 2025 METRICX. All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="footer-made-with">Made with ❤️ for precision and accuracy</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent default form submission
+
+        const form = event.target;
+        const successMessage = document.getElementById('contactSuccessMessage');
+
+        // Simulate form submission (e.g., via AJAX in a real application)
+        // For this example, we'll just use a timeout
+        setTimeout(() => {
+            // Display success message
+            successMessage.style.display = 'block';
+            successMessage.style.opacity = 0;
+            let opacity = 0;
+            const fadeInInterval = setInterval(() => {
+                if (opacity < 1) {
+                    opacity += 0.1;
+                    successMessage.style.opacity = opacity;
+                } else {
+                    clearInterval(fadeInInterval);
+                }
+            }, 50);
+
+            // Clear form fields
+            form.reset();
+
+            // Hide message after a few seconds
+            setTimeout(() => {
+                let opacity = 1;
+                const fadeOutInterval = setInterval(() => {
+                    if (opacity > 0) {
+                        opacity -= 0.1;
+                        successMessage.style.opacity = opacity;
+                    } else {
+                        successMessage.style.display = 'none';
+                        clearInterval(fadeOutInterval);
+                    }
+                }, 50);
+            }, 5000); // Message visible for 5 seconds
+        }, 500); // Simulate a small delay for submission
+    });
+</script>
+</body>
+
+</html>

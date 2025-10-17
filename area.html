@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Converter - METRICX</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+                <span class="brand-name">METRICX</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-light" type="submit"><i class="fas fa-search"></i></button>
+                        </form>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Conversions
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="length.html">• Length</a></li>
+                            <li><a class="dropdown-item" href="area.html">• Area</a></li>
+                            <li><a class="dropdown-item" href="mass.html">• Mass</a></li>
+                            <li><a class="dropdown-item" href="temperature.html">• Temperature</a></li>
+                            <li><a class="dropdown-item" href="currency.html">• Currency</a></li>
+                            <li><a class="dropdown-item" href="volume.html">• Volume</a></li>
+                            <li><a class="dropdown-item" href="speed.html">• Speed</a></li>
+                            <li><a class="dropdown-item" href="energy.html">• Energy</a></li>
+                            <li><a class="dropdown-item" href="time.html">• Time</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Articles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#faqs-section">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h1 class="page-title" data-aos="fade-up">Area Converter</h1>
+                    <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Calculate square meters, acres, and hectares</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="converter-card" data-aos="fade-up">
+                        <h2 class="converter-title">Area Conversion Tool</h2>
+                        <div class="converter-form">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">From</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="fromValue" placeholder="Enter value" step="any">
+                                        <select class="form-select" id="fromUnit">
+                                            <option value="square_meter">Square Meter (m²)</option>
+                                            <option value="square_kilometer">Square Kilometer (km²)</option>
+                                            <option value="square_centimeter">Square Centimeter (cm²)</option>
+                                            <option value="square_millimeter">Square Millimeter (mm²)</option>
+                                            <option value="square_inch">Square Inch (in²)</option>
+                                            <option value="square_foot">Square Foot (ft²)</option>
+                                            <option value="square_yard">Square Yard (yd²)</option>
+                                            <option value="acre">Acre</option>
+                                            <option value="hectare">Hectare</option>
+                                            <option value="square_mile">Square Mile</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">To</label>
+                                    <div class="input-group">
+                                        <input type="number" class="form-control" id="toValue" placeholder="Result" readonly>
+                                        <select class="form-select" id="toUnit">
+                                            <option value="square_meter">Square Meter (m²)</option>
+                                            <option value="square_kilometer">Square Kilometer (km²)</option>
+                                            <option value="square_centimeter">Square Centimeter (cm²)</option>
+                                            <option value="square_millimeter">Square Millimeter (mm²)</option>
+                                            <option value="square_inch">Square Inch (in²)</option>
+                                            <option value="square_foot" selected>Square Foot (ft²)</option>
+                                            <option value="square_yard">Square Yard (yd²)</option>
+                                            <option value="acre">Acre</option>
+                                            <option value="hectare">Hectare</option>
+                                            <option value="square_mile">Square Mile</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-lg" onclick="swapUnits()">
+                                    <i class="fas fa-exchange-alt"></i> Swap Units
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <h3 class="section-title text-center mb-4">Common Area Conversions</h3>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="conversion-example">
+                                <h5>1 Square Meter =</h5>
+                                <ul>
+                                    <li>10,000 Square Centimeters</li>
+                                    <li>10.7639 Square Feet</li>
+                                    <li>1,550 Square Inches</li>
+                                    <li>1.19599 Square Yards</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="conversion-example">
+                                <h5>1 Hectare =</h5>
+                                <ul>
+                                    <li>10,000 Square Meters</li>
+                                    <li>2.47105 Acres</li>
+                                    <li>107,639 Square Feet</li>
+                                    <li>0.01 Square Kilometers</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="footer-title">METRICX</h5>
+                    <p class="footer-text">Your ultimate tool for seamless metric conversions. Convert with precision and confidence across all measurement units.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">Conversions</h6>
+                    <ul class="footer-links">
+                        <li><a href="length.html">Length</a></li>
+                        <li><a href="area.html">Area</a></li>
+                        <li><a href="mass.html">Mass</a></li>
+                        <li><a href="temperature.html">Temperature</a></li>
+                        <li><a href="currency.html">Currency</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">More Tools</h6>
+                    <ul class="footer-links">
+                        <li><a href="volume.html">Volume</a></li>
+                        <li><a href="speed.html">Speed</a></li>
+                        <li><a href="energy.html">Energy</a></li>
+                        <li><a href="time.html">Time</a></li>
+                        <li><a href="pressure.html">Pressure</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">Resources</h6>
+                    <ul class="footer-links">
+                        <li><a href="articles.html">Articles</a></li>
+                        <li><a href="history.html">History</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                        <li><a href="api.html">API Docs</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="footer-subtitle">Company</h6>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                        <li><a href="support.html">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-divider">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <small class="footer-copyright">Copyright &copy; 2025 METRICX. All Rights Reserved.</small>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <small class="footer-made-with">Made with ❤️ for precision and accuracy</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/area-converter.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const fromValue = document.getElementById('fromValue');
+    const fromUnit = document.getElementById('fromUnit');
+    const toUnit = document.getElementById('toUnit');
+    const toValue = document.getElementById('toValue');
+
+    fromValue.addEventListener('input', convertArea);
+    fromUnit.addEventListener('change', convertArea);
+    toUnit.addEventListener('change', convertArea);
+
+    // Swap button
+    window.swapUnits = function () {
+        const tempUnit = fromUnit.value;
+        fromUnit.value = toUnit.value;
+        toUnit.value = tempUnit;
+        convertArea();
+    };
+
+    function convertArea() {
+        const value = parseFloat(fromValue.value);
+        if (isNaN(value)) {
+            toValue.value = "";
+            return;
+        }
+
+        // Conversion factors (all relative to 1 square meter)
+        const conversionRates = {
+            square_meter: 1,
+            square_kilometer: 1e6,
+            square_centimeter: 0.0001,
+            square_millimeter: 0.000001,
+            square_inch: 0.00064516,
+            square_foot: 0.092903,
+            square_yard: 0.836127,
+            acre: 4046.8564224,
+            hectare: 10000,
+            square_mile: 2.59e6
+        };
+
+        // Convert: source → m² → target
+        const valueInSqm = value * conversionRates[fromUnit.value];
+        const result = valueInSqm / conversionRates[toUnit.value];
+
+        toValue.value = result.toFixed(6); // limit to 6 decimals
+    }
+
+    // Run initial conversion
+    convertArea();
+});
+
+    </script>
+</body>
+</html>
+
+
+
